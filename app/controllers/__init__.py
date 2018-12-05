@@ -1,4 +1,5 @@
 from flask import Blueprint
 
-users_blueprint = Blueprint('users', __name__)
+user_blueprints = Blueprint('users', 'api')
+
 from . import users_controller
