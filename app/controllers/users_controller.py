@@ -1,4 +1,4 @@
-from flask import request, jsonify
+from flask import request, jsonify, render_template
 
 from . import user_blueprints
 from app.models.user import User
@@ -11,3 +11,7 @@ def get_users():
     new_task.delay()
     return jsonify({'data': users})
 
+@user_blueprints.route('/home')
+def home():
+    
+    return render_template('index.html')
