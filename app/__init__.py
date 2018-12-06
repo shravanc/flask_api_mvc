@@ -25,7 +25,6 @@ def initialize_extensions(application):
 
 def register_blueprints(application):
     from app.controllers import user_blueprints
-
     application.register_blueprint(user_blueprints)
 
 

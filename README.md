@@ -6,9 +6,8 @@ Models
 
 Controllers
 
-
-
 App
+
 1.
 # inside initialize_extensions
 from app.models import NewModel
